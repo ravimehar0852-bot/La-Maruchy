@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Maruchy — Cocina artesanal en Villa Mercedes, San Luis. Empanadas, milapizzas, delivery y más." />
+  <title>La Maruchy — Cocina Artesanal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥐</text></svg>" />
+</head>
+<body>
+
+<!-- ========================================
+     NAVIGATION
+     ======================================== -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="#" class="nav-logo" data-page="home">La <span>Maruchy</span></a>
+
+    <ul class="nav-links">
+      <li><a data-page="home" href="#">Inicio</a></li>
+      <li><a data-page="menu" href="#">Menú</a></li>
+      <li><a data-page="about" href="#">Nosotros</a></li>
+      <li><a data-page="gallery" href="#">Galería</a></li>
+      <li><a data-page="contact" href="#" class="nav-cta">Contacto</a></li>
+    </ul>
+
+    <button class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu">
+  <a data-page="home"    href="#">Inicio</a>
+  <a data-page="menu"    href="#">Menú</a>
+  <a data-page="about"   href="#">Nosotros</a>
+  <a data-page="gallery" href="#">Galería</a>
+  <a data-page="contact" href="#">Contacto</a>
+</div>
+
+
+<!-- ========================================
+     PAGE: HOME
+     ======================================== -->
+<div id="page-home" class="page">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="section-label">Villa Mercedes, San Luis</span>
+      <h1 class="hero-title">
+        Sabores que<br><em>enamoran</em>
+      </h1>
+      <p class="hero-desc">
+        Cocina artesanal hecha con amor desde nuestra cocina hasta tu mesa. 
+        Empanadas, milapizzas y mucho más — todo casero, todo fresco.
+      </p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary" data-page="menu">Ver Menú</a>
+        <a href="#" class="btn btn-outline" data-page="contact">Hacer Pedido</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>4.8★</strong>
+          <span>Google Reviews</span>
+        </div>
+        <div class="hero-stat">
+          <strong>100%</strong>
+          <span>Casero</span>
+        </div>
+        <div class="hero-stat">
+          <strong>+3</strong>
+          <span>Años de sabor</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-wrap">
+      <div style="width:100%;max-width:520px;height:560px;background:linear-gradient(145deg,#F5EDE3,#DDB892);border-radius:200px 200px 0 0;display:flex;align-items:center;justify-content:center;font-size:9rem;box-shadow:0 12px 48px rgba(92,61,46,0.16);">🥘</div>
+      <div class="hero-badge">
+        <strong>⭐ 4.8</strong>
+        <span>11 Reseñas</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Items -->
+  <section class="featured">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Lo más pedido</span>
+        <h2>Nuestras Especialidades</h2>
+        <p>Recetas que nuestros clientes adoran y vuelven a pedir siempre.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-img" style="height:220px;background:linear-gradient(135deg,#F5E6D6,#DDB892);display:flex;align-items:center;justify-content:center;font-size:5rem;">🫔</div>
+          <div class="card-body">
+            <span class="card-tag">Clásico</span>
+            <h3>Empanadas Caseras</h3>
+            <p>Rellenas con carne, pollo o verdura. Masa artesanal, horneadas a la perfección.</p>
+            <span class="card-price">A consultar</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" style="height:220px;background:linear-gradient(135deg,#FFE5CC,#FFC896);display:flex;align-items:center;justify-content:center;font-size:5rem;">🍕</div>
+          <div class="card-body">
+            <span class="card-tag">Estrella</span>
+            <h3>Milapizza</h3>
+            <p>La combinación perfecta de milanesa y pizza — nuestro plato estrella que te va a sorprender.</p>
+            <span class="card-price">A consultar</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img" style="height:220px;background:linear-gradient(135deg,#E8F5D6,#C8E6A0);display:flex;align-items:center;justify-content:center;font-size:5rem;">🍽️</div>
+          <div class="card-body">
+            <span class="card-tag">Variedad</span>
+            <h3>Platos del Día</h3>
+            <p>Comida casera de calidad que varía cada día. Siempre fresca, siempre deliciosa.</p>
+            <span class="card-price">A consultar</span>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:3rem">
+        <a href="#" class="btn btn-outline" data-page="menu">Ver Menú Completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section class="why-us">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-us-text">
+          <span class="section-label">¿Por qué elegirnos?</span>
+          <h2>Cocina con alma, <br>servicio con corazón</h2>
+          <p>En La Maruchy cada plato lleva el cariño de quien cocina con pasión. Nuestros clientes no solo vuelven por la comida — vuelven por la experiencia.</p>
+          <a href="#" class="btn btn-primary" data-page="contact" style="background:var(--gold);border-color:var(--gold)">Hacer un Pedido</a>
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">🏡</div>
+              <div>
+                <h4>Todo Casero</h4>
+                <p>Ingredientes frescos y recetas propias. Sin conservantes, sin atajos.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🛵</div>
+              <div>
+                <h4>Delivery a domicilio</h4>
+                <p>Te llevamos la comida donde estés. Cómodo, rápido y sin complicaciones.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">❤️</div>
+              <div>
+                <h4>Atención personalizada</h4>
+                <p>Tratamos a cada cliente como a un amigo. Eso hacen la diferencia.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;font-size:14rem;opacity:0.4;line-height:1">🥘</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Lo que dicen</span>
+        <h2>Nuestros Clientes</h2>
+        <p>Más de 11 reseñas con promedio 4.8 ⭐ en Google Maps.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Muy rico todo, hecho en casa. La calidad se nota desde el primer bocado."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">RC</div>
+            <div>
+              <strong>Rodrigo Cid</strong>
+              <span>Google Local Guide</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"Excelente comida. Lo mejor fue que amablemente me mandaron la comida con un delivery porque yo estaba muy lejos."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">MC</div>
+            <div>
+              <strong>Miguel Castellano</strong>
+              <span>Google Local Guide</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p>"¡Los dueños son increíbles! Y la comida fue increíble. ¡Las empanadas y la milapizza estaban buenísimas!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">JC</div>
+            <div>
+              <strong>Juan Cruz Castex</strong>
+              <span>Cliente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-home -->
+
+
+<!-- ========================================
+     PAGE: MENU
+     ======================================== -->
+<div id="page-menu" class="page">
+
+  <div class="menu-hero">
+    <div class="container">
+      <span class="section-label">Lo que cocinamos</span>
+      <h1>Nuestro Menú</h1>
+      <p>Todo hecho en casa, con ingredientes frescos y mucho amor.</p>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="menu-tabs">
+    <div class="container">
+      <div class="tabs-inner">
+        <button class="tab-btn active" data-tab="empanadas">🫔 Empanadas</button>
+        <button class="tab-btn" data-tab="pizzas">🍕 Milapizzas</button>
+        <button class="tab-btn" data-tab="platos">🍽️ Platos</button>
+        <button class="tab-btn" data-tab="postres">🍰 Postres</button>
+        <button class="tab-btn" data-tab="bebidas">🥤 Bebidas</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="menu-section">
+    <div class="container">
+
+      <!-- Empanadas -->
+      <div class="menu-category active" id="cat-empanadas">
+        <span class="section-label">Caseras &amp; artesanales</span>
+        <h2>Empanadas</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">🫔</div>
+            <div class="menu-item-info">
+              <h4>Empanada de Carne</h4>
+              <p>Carne picada criolla con cebolla, morrón y especias. El clásico de siempre.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🍗</div>
+            <div class="menu-item-info">
+              <h4>Empanada de Pollo</h4>
+              <p>Pollo desmenuzado con verduras y condimentos caseros.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🌿</div>
+            <div class="menu-item-info">
+              <h4>Empanada de Verdura</h4>
+              <p>Espinaca, ricota y queso. Perfecta para vegetarianos.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🧀</div>
+            <div class="menu-item-info">
+              <h4>Empanada de Jamón y Queso</h4>
+              <p>El favorito de los chicos y grandes. Clásico irresistible.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🐟</div>
+            <div class="menu-item-info">
+              <h4>Empanada de Atún</h4>
+              <p>Atún natural con aceitunas, cebolla y huevo duro.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🌽</div>
+            <div class="menu-item-info">
+              <h4>Empanada de Humita</h4>
+              <p>Choclo cremoso con especias. Sabor del norte argentino.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pizzas / Milapizzas -->
+      <div class="menu-category" id="cat-pizzas">
+        <span class="section-label">Nuestra especialidad</span>
+        <h2>Milapizzas &amp; Pizzas</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">🍕</div>
+            <div class="menu-item-info">
+              <h4>Milapizza Clásica</h4>
+              <p>Milanesa de carne con salsa de tomate, mozzarella y orégano.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🍗</div>
+            <div class="menu-item-info">
+              <h4>Milapizza de Pollo</h4>
+              <p>Milanesa de pollo con salsa casera y queso derretido.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🍕</div>
+            <div class="menu-item-info">
+              <h4>Pizza Muzzarella</h4>
+              <p>Masa artesanal con salsa de tomate y mozzarella.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🥚</div>
+            <div class="menu-item-info">
+              <h4>Pizza Fugazzeta</h4>
+              <p>Cebolla caramelizada, aceitunas y queso. Irresistible.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Platos -->
+      <div class="menu-category" id="cat-platos">
+        <span class="section-label">Cocina casera</span>
+        <h2>Platos Principales</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">🍽️</div>
+            <div class="menu-item-info">
+              <h4>Plato del Día</h4>
+              <p>Rotamos el menú diariamente. Siempre fresco, siempre casero. Consultar disponibilidad.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🥩</div>
+            <div class="menu-item-info">
+              <h4>Milanesas</h4>
+              <p>De carne o pollo, a la napolitana o clásicas, con guarnición.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🍝</div>
+            <div class="menu-item-info">
+              <h4>Pastas</h4>
+              <p>Fideos caseros con diferentes salsas. Consultar disponibilidad.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🥗</div>
+            <div class="menu-item-info">
+              <h4>Ensaladas</h4>
+              <p>Frescas y variadas. Perfectas para acompañar o como plato principal.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Postres -->
+      <div class="menu-category" id="cat-postres">
+        <span class="section-label">Para cerrar con dulzura</span>
+        <h2>Postres</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">🍰</div>
+            <div class="menu-item-info">
+              <h4>Tortas Caseras</h4>
+              <p>Tortas del día, elaboradas en casa con recetas propias.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🍮</div>
+            <div class="menu-item-info">
+              <h4>Flan Casero</h4>
+              <p>Con dulce de leche o crema. El clásico argentino de siempre.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🧁</div>
+            <div class="menu-item-info">
+              <h4>Postres del Día</h4>
+              <p>Elaboración diaria. Siempre una sorpresa dulce esperándote.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bebidas -->
+      <div class="menu-category" id="cat-bebidas">
+        <span class="section-label">Para acompañar</span>
+        <h2>Bebidas</h2>
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-img">🥤</div>
+            <div class="menu-item-info">
+              <h4>Gaseosas</h4>
+              <p>Coca-Cola, Sprite, Fanta y más. Fría y bien servida.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">💧</div>
+            <div class="menu-item-info">
+              <h4>Agua Mineral</h4>
+              <p>Con o sin gas.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-img">🧃</div>
+            <div class="menu-item-info">
+              <h4>Jugos Naturales</h4>
+              <p>Según temporada. Consultar disponibilidad.</p>
+            </div>
+            <span class="menu-item-price">Consultar</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section style="background:var(--brown);padding:4rem 0;text-align:center">
+    <div class="container">
+      <h2 style="color:var(--cream);margin-bottom:1rem">¿Listo para pedir?</h2>
+      <p style="color:rgba(250,246,240,0.7);margin-bottom:2rem">Escribinos por WhatsApp y te atendemos al instante.</p>
+      <!-- ✅ WhatsApp ORDER BUTTON -->
+      <a href="https://wa.me/5492657784296?text=Hola%20La%20Maruchy!%20Quiero%20hacer%20un%20pedido%20🍕" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background:var(--gold);border-color:var(--gold);font-size:1rem">
+        💬 Pedir por WhatsApp
+      </a>
+    </div>
+  </section>
+
+</div><!-- /page-menu -->
+
+
+<!-- ========================================
+     PAGE: ABOUT
+     ======================================== -->
+<div id="page-about" class="page">
+
+  <div class="about-hero">
+    <div class="container">
+      <div class="about-hero-inner">
+        <div>
+          <span class="section-label">Nuestra historia</span>
+          <h1>Hechos con amor,<br>servidos con pasión</h1>
+          <p>La Maruchy nació del deseo de compartir sabores auténticos en Villa Mercedes. Una cocina familiar que se convirtió en el lugar favorito del barrio.</p>
+          <a href="#" class="btn btn-primary" data-page="contact" style="margin-top:2rem;background:var(--gold);border-color:var(--gold)">Visitanos</a>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;font-size:12rem;opacity:0.3;line-height:1">👨‍🍳</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story -->
+  <section class="about-story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-text">
+          <span class="section-label">Quiénes somos</span>
+          <h2>Una cocina que sabe a casa</h2>
+          <p>En La Maruchy creemos que la mejor comida es la que se hace con ingredientes frescos y el cariño de quien cocina para su familia.</p>
+          <p>Comenzamos ofreciendo empanadas caseras en Villa Mercedes y fuimos creciendo de la mano de clientes que se convirtieron en amigos. Hoy somos un punto de referencia en La Ribera.</p>
+          <p>Nuestro local en La Ribera 5630 abre sus puertas cada noche para recibirte con el mejor sabor casero de la ciudad, ya sea para comer aquí, llevar o pedir delivery.</p>
+        </div>
+        <div style="background:linear-gradient(135deg,#F5EDE3,#DDB892);border-radius:var(--radius);height:420px;display:flex;align-items:center;justify-content:center;font-size:10rem;box-shadow:var(--shadow);">🏡</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="values">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Lo que nos define</span>
+        <h2>Nuestros Valores</h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card">
+          <span class="value-icon">🌾</span>
+          <h3>Ingredientes Frescos</h3>
+          <p>Seleccionamos los mejores ingredientes para garantizar el sabor auténtico en cada plato.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">❤️</span>
+          <h3>Hecho con Amor</h3>
+          <p>Cada receta lleva el cariño y la dedicación de quien cocina para su propia familia.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🤝</span>
+          <h3>Trato Cercano</h3>
+          <p>Somos un negocio familiar y tratamos a cada cliente como a un amigo de toda la vida.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🛵</span>
+          <h3>Siempre para Vos</h3>
+          <p>Delivery, take away o en local. Nos adaptamos a lo que necesitás.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-about -->
+
+
+<!-- ========================================
+     PAGE: GALLERY
+     ======================================== -->
+<div id="page-gallery" class="page">
+
+  <div class="gallery-hero">
+    <div class="container">
+      <span class="section-label">Imágenes</span>
+      <h1>Galería</h1>
+      <p>Una mirada a nuestro local, nuestros platos y el sabor que nos identifica.</p>
+    </div>
+  </div>
+
+  <section class="gallery-section">
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item tall">
+          <div class="gallery-item-inner">🫔</div>
+          <div class="gallery-overlay"><span>Empanadas Caseras</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner">🍕</div>
+          <div class="gallery-overlay"><span>Milapizza</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner">🏡</div>
+          <div class="gallery-overlay"><span>Nuestro Local</span></div>
+        </div>
+        <div class="gallery-item wide">
+          <div class="gallery-item-inner">🍽️</div>
+          <div class="gallery-overlay"><span>Platos del Día</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner">🥩</div>
+          <div class="gallery-overlay"><span>Milanesas</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner">🍰</div>
+          <div class="gallery-overlay"><span>Postres Caseros</span></div>
+        </div>
+        <div class="gallery-item tall">
+          <div class="gallery-item-inner">👨‍🍳</div>
+          <div class="gallery-overlay"><span>Nuestra Cocina</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner">🌽</div>
+          <div class="gallery-overlay"><span>Empanada de Humita</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner">🥗</div>
+          <div class="gallery-overlay"><span>Ensaladas Frescas</span></div>
+        </div>
+        <div class="gallery-item wide">
+          <div class="gallery-item-inner">🎉</div>
+          <div class="gallery-overlay"><span>Para Eventos y Catering</span></div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-item-inner">🧁</div>
+          <div class="gallery-overlay"><span>Dulces</span></div>
+        </div>
+      </div>
+
+      <div style="text-align:center;margin-top:3rem">
+        <p style="color:var(--text-muted);margin-bottom:1rem">¿Querés ver más? Seguinos en Instagram</p>
+        <!-- ✅ INSTAGRAM FOLLOW BUTTON -->
+        <a href="https://www.instagram.com/lamaruchy_villam/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          📸 Seguir en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">✕</button>
+    <div id="lightbox-content" class="lightbox-content"></div>
+  </div>
+
+</div><!-- /page-gallery -->
+
+
+<!-- ========================================
+     PAGE: CONTACT
+     ======================================== -->
+<div id="page-contact" class="page">
+
+  <div class="contact-hero">
+    <div class="container">
+      <span class="section-label">Estamos para vos</span>
+      <h1>Contacto</h1>
+      <p>Escribinos para hacer tu pedido, una reserva o cualquier consulta.</p>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <h3>Encontranos</h3>
+
+          <div class="info-block">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Dirección</h4>
+              <p>La Ribera 5630<br>D5730 Villa Mercedes, San Luis<br>Argentina</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Teléfono / WhatsApp</h4>
+              <!-- ✅ WHATSAPP LINK IN INFO -->
+              <p><a href="https://wa.me/5492657784296" target="_blank" rel="noopener noreferrer">+54 2657 78-4296</a></p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4>Horarios</h4>
+              <p>Abrimos a partir de las 20:00 hs<br>Consultar días de atención</p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon">🛵</div>
+            <div>
+              <h4>Modalidades</h4>
+              <p>Comer en el local · Delivery · Take away</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <!-- ✅ SOCIAL LINKS -->
+            <a href="https://wa.me/5492657784296" target="_blank" rel="noopener noreferrer" class="social-link" title="WhatsApp">💬</a>
+            <a href="https://www.instagram.com/lamaruchy_villam/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">📸</a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap">
+          <h3>Mandanos un mensaje</h3>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" placeholder="+54 ..." />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto">
+                <option>Hacer un pedido</option>
+                <option>Consulta sobre el menú</option>
+                <option>Catering / Eventos</option>
+                <option>Otra consulta</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="4" placeholder="¿En qué te podemos ayudar?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+              Enviar Mensaje
+            </button>
+          </form>
+          <div class="form-success" id="form-success">
+            <div class="success-icon">✅</div>
+            <h3>¡Mensaje enviado!</h3>
+            <p>Te contactaremos a la brevedad. También podés escribirnos directamente por WhatsApp.</p>
+            <!-- ✅ WHATSAPP FALLBACK AFTER FORM -->
+            <a href="https://wa.me/5492657784296?text=Hola%20La%20Maruchy!" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:1.5rem">
+              💬 Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map placeholder -->
+  <section class="map-section">
+    <div class="container">
+      <div class="map-placeholder">
+        <span class="map-icon">🗺️</span>
+        <h3>La Ribera 5630, Villa Mercedes</h3>
+        <p>San Luis, Argentina</p>
+        <a href="https://maps.google.com/?q=La+Ribera+5630,+Villa+Mercedes,+San+Luis,+Argentina" target="_blank" rel="noopener noreferrer">
+          → Abrir en Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-contact -->
+
+
+<!-- ========================================
+     FOOTER (always visible)
+     ======================================== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>La <span>Maruchy</span></h3>
+        <p>Cocina artesanal hecha con amor en Villa Mercedes, San Luis. Todo casero, todo fresco, todo rico.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Páginas</h4>
+        <ul>
+          <li><a data-page="home"    href="#">Inicio</a></li>
+          <li><a data-page="menu"    href="#">Menú</a></li>
+          <li><a data-page="about"   href="#">Nosotros</a></li>
+          <li><a data-page="gallery" href="#">Galería</a></li>
+          <li><a data-page="contact" href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/5492657784296" target="_blank" rel="noopener noreferrer">+54 2657 78-4296</a></li>
+          <li>La Ribera 5630</li>
+          <li>Villa Mercedes, San Luis</li>
+          <li>Abre a las 20:00 hs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 La Maruchy. Todos los derechos reservados.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/5492657784296" target="_blank" rel="noopener noreferrer" title="WhatsApp">💬</a>
+        <a href="https://www.instagram.com/lamaruchy_villam/" target="_blank" rel="noopener noreferrer" title="Instagram">📸</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ========================================
+     ✅ FLOATING BUTTONS
+     WhatsApp + Instagram
+     ======================================== -->
+<div class="floating-buttons">
+  <!-- INSTAGRAM FLOATING BUTTON -->
+  <a
+    href="https://www.instagram.com/lamaruchy_villam/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="float-btn instagram"
+    aria-label="Seguir en Instagram"
+  >
+    📸
+    <span class="float-tooltip">Instagram</span>
+  </a>
+
+  <!-- WHATSAPP FLOATING BUTTON -->
+  <a
+    href="https://wa.me/5492657784296?text=Hola%20La%20Maruchy!%20Quiero%20hacer%20un%20pedido%20🍕"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="float-btn whatsapp"
+    aria-label="Chatear por WhatsApp"
+  >
+    💬
+    <span class="float-tooltip">¡Chateá con nosotros!</span>
+  </a>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
